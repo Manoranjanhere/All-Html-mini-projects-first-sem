@@ -1,0 +1,111 @@
+<!-- celsius to Fahrenheit
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Temperature conversion(Celcius to Fahrenheit)</h3>
+    <script>
+        celcius = parseInt(prompt("Enter temperature in celcius: "));
+        document.write("Temperature in celcius:", celcius + "C <br>");
+        F = 1.8 * (celcius) + 32
+        document.write("Temperature in Fahrenheit:" + F + " F ");
+
+    </script>
+</body>
+
+</html> -->
+
+
+<!-- prime nos bw 1 to 50
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Prime numbers between 1 to 50</h3>
+    <script>
+        for (i=2; i<=50; i++)
+        {
+            for (j=2; j<=i; j++)
+            {
+                if(i%j==0)
+                {
+                    break;
+                }
+            }
+            if(i==j)
+            {
+                document.write(i+"<br>")
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- leap year
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+<body>
+    <h3>Leap year</h3>
+    <script>
+        var a = prompt("Enter the year");
+        if(a%4==0)
+        {
+            document.write("This is a leap year.")
+        }
+        else{
+            document.write("This is not a leap year.")
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- reverse number
+<script>
+    num=parseInt(prompt('Enter a number:'));
+    document.write("Original number:"+num+"<br> ");
+    revnum=num.toString().split("").reverse().join("");
+    document.write("Reverse nunmber:"+revnum+"<br> ")
+</script> -->
+
+
+<script>
+    age = parseInt(prompt("Enter your age:"))
+    document.write("Age:" + age)
+
+    for (i = 0; i < age; i++) {
+        console.log(i, "Happy birthday to you")
+    }
+</script>
+
+
+<script>
+    var a = 0, b = 1;
+    console.log(a);
+    console.log(b);
+    for (var i = 0; i < 10; i++) {
+        var temp = a + b;
+        console.log(temp)
+        a = b;
+        b = temp;
+    }
+</script>

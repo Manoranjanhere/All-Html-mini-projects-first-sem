@@ -1,0 +1,91 @@
+<!-- onmousedown -->
+<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()"> krishna </p>
+function mouseDown() {
+document.getElementById("myP").style.border="2px solid black";
+}
+
+function mouseUp() {
+document.getElementById("myP").style.color = "blue";
+}
+
+<!-- onchange -->
+<select id="mySelect" onchange="myFunction()">
+  <option value="Audi">Audi</option>
+  <option value="BMW">BMW</option>
+  <option value="Mercedes">Mercedes</option>
+  <option value="Volvo">Volvo</option>
+</select>
+
+<p id="demo"></p>
+
+function myFunction() {
+alert("alerttttt")
+}
+
+<!-- onkeypress -->
+<input type="text" onkeypress="myFunction()">
+
+<script>
+  function myFunction() {
+    alert("You pressed a key inside the input field");
+  }
+</script>
+
+<!-- confirm box -->
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+  function myFunction() {
+    var txt;
+    if (confirm("Press a button!")) {
+      txt = "You pressed OK!";
+    } else {
+      txt = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+  }
+</script>
+
+<!-- prompt box -->
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+  function myFunction() {
+    let text;
+    let person = prompt("Please enter your name:", "Harry Potter");
+    if (person == null || person == "") {
+      text = "User cancelled the prompt.";
+    } else {
+      text = "Hello " + person + "! How are you today?";
+    }
+    document.getElementById("demo").innerHTML = text;
+  }
+</script>
+
+<!-- zoom in zoom out -->
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img3.jpg" alt="" width="400">
+<script>
+  function bigImg(x) {
+    x.style.height = "800px";
+    x.style.width = "800px";
+  }
+
+  function normalImg(x) {
+    x.style.height = "300px";
+    x.style.width = "300px";
+  }
+</script>
+
+<!-- table -->
+<script type="text/javascript">
+  var t = 5;
+  var i = 1;
+  while (i <= 20) {
+    document.write(t + "  X  " + i + "  =  " + i * t + "<br>");
+    i++;
+  }
+</script>

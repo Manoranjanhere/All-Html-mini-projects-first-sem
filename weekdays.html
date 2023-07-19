@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript can Change HTML</h2>
+<form action="" id="week" method="post">
+    <input id="input" type="number" required>
+    <button id="sub" >Dates</button>
+</form>
+
+
+<script>
+    
+sub = document.getElementById("week") 
+
+
+sub.addEventListener("submit",() => {
+    input = document.getElementById("input").value
+    arr = ["mon","tues","wend","thures", "fri","sat","sun"]
+    alert(arr[Number(input) - 1])
+
+ 
+
+})
+</script>
+
+
+</body>
+</html>

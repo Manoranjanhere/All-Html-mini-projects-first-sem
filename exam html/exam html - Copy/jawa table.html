@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Prompt the user to enter the number of rows and columns
+var rows = prompt("Enter the number of rows: ");
+var cols = prompt("Enter the number of columns: ");
+
+// Print the table header
+document.write("<table>");
+document.write("<tr>");
+
+// Print the table cells
+for (var i = 0; i < cols; i++) {
+  document.write("<th>Column " + (i+1) + "</th>");
+}
+
+document.write("</tr>");
+
+// Print the table rows
+for (var i = 0; i < rows; i++) {
+  document.write("<tr>");
+
+  for (var j = 0; j < cols; j++) {
+    document.write("<td>Row " + (i+1) + ", Column " + (j+1) + "</td>");
+  }
+
+  document.write("</tr>");
+}
+
+// Print the closing table tag
+document.write("</table>");
+
+    </script>
+</body>
+</html>

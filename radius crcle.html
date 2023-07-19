@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<h1>Area of a Circle Calculator</h1>
+
+<p>Enter the radius of the circle:</p>
+
+<input type="number" id="radius">
+
+<button onclick="areacircle()">Calculate Area</button>
+
+<p id="result"></p>
+
+<script>
+function areacircle() {
+  // Get the radius from the input field
+  var radius = document.getElementById("radius").value;
+
+  // Calculate the area of the circle
+  var area = Math.PI * radius * radius;
+
+  // Display the result
+  document.getElementById("result").innerHTML = "The area of the circle is " + area;
+}
+</script>
+
+</body>
+</html>

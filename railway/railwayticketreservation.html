@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Railway Ticket Booking</title>
+    <link rel="stylesheet" href="railwayticketreservation.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <h1 class="head">Railway Ticket reservation system</h1>
+      <div class="navigation">
+        <ul>
+          <li><a href="index.html" id="onlink">HOME</a></li>
+          <li><a href="meal.html">MEALS</a></li>
+          <li><a href="holiday.html"> PACKAGES</a></li>
+          <li><a href="service.html">SERVICE</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+
+      <div class="booking">
+        <section>
+          <h2 class="head1">Book</h2>
+          <h2 class="head2">Your</h2>
+          <h2 class="head3">Tickets</h2>
+          <h2 class="head4">Here</h2>
+
+          <form>
+            <ul>
+              <b class="fsize">
+                From &emsp;<input type="text" placeholder="From [STN Code]" />
+              </b>
+              <br />
+              <br />
+              <b class="fsize">
+                To &emsp;<input type="text" placeholder="To [STN Code]" />
+              </b>
+              <br />
+              <br />
+              <b class="fsize">
+                Date&emsp;<input type="Date" placeholder="dd-mm-yy" />
+              </b>
+              <br />
+              <br />
+              <label class="fsize"><strong> Class </strong> </label>
+              <select id="class" name="class">
+                <option value="select">SELECT</option>
+                <option value="1AC">1AC</option>
+                <option value="2AC">2AC</option>
+                <option value="3AC">3AC</option>
+                <option value="Sleeper">Sleeper</option>
+                <option value="Chair">Chair</option>
+                <br />
+              </select>
+            </ul>
+          </form>
+
+          <button class="submit" type="button" onclick="trainB()">
+            Find Trains
+        </section>
+      </div>
+
+      <img
+        class="img"
+        src="New folder/images (7).jpg"
+        alt="image"
+        width="500"
+        height="350"
+        align="center"
+      />
+
+      <h1 class="holiday">HOLIDAYS</h1>
+
+      <img
+        class="imgs"
+        src="New folder/images (6).jpg"
+        alt="image"
+        width="500"
+        height="350"
+        align="center"
+      />
+      <img
+        class="imgs"
+        src="New folder/image_e6a634e1-859c-42b1-95d6-c6fcd2e5f9c120221002_022221.jpg"
+        alt="image"
+        width="500"
+        height="350"
+        align="center"
+      />
+      <img
+        class="imgs"
+        src="New folder/image_1f8a3342-3bed-4ba8-b716-d23020bcc85b20221002_022226.jpg"
+        alt="image"
+        width="500"
+        height="350"
+        align="center"
+      />
+    </div>
+    <script src="main.js"></script>
+     
+  </body>
+</html>

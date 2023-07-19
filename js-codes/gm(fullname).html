@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Greetings</title>
+  </head>
+  <body>
+    <h1>Enter your name:</h1>
+    <p>First name: <input type="text" id="firstName"></p>
+    <p>Middle name: <input type="text" id="middleName"></p>
+    <p>Last name: <input type="text" id="lastName"></p>
+    <button onclick="sayHello()">Say hello</button>
+    <p id="greeting"></p>
+    <script>
+      function sayHello() {
+        // Get the user's name from the text boxes
+        var firstName = document.getElementById("firstName").value;
+        var middleName = document.getElementById("middleName").value;
+        var lastName = document.getElementById("lastName").value;
+        
+        // Create the greeting
+        var greeting = "Good morning " + firstName + " " + middleName + " " + lastName + "!";
+        
+        // Set the greeting as the text of the "greeting" paragraph
+        document.getElementById("greeting").innerText = greeting;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+   <title>HTML Table Generator</title>
+   <script>
+      // Prompt the user for the number of rows and columns
+      var rows = prompt("Enter the number of rows:");
+      var cols = prompt("Enter the number of columns:");
+
+      // Generate the HTML table
+      var html = "<table>";
+      for (var i = 0; i < rows; i++) {
+         html += "<tr>";
+         for (var j = 0; j < cols; j++) {
+            html += "<td>Row " + i + ", Column " + j + "</td>";
+         }
+         html += "</tr>";
+      }
+      html += "</table>";
+
+      // Insert the table into the page
+      document.write(html);
+   </script>
+</head>
+<body>
+
+</body>
+</html>
+

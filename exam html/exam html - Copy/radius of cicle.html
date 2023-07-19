@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Prompt the user for the radius of a circle
+var radius = prompt("Enter the radius of a circle:");
+
+// Convert the radius from a string to a number
+radius = Number(radius);
+
+// Call the areaCircle function and pass the radius as an argument
+var area = areaCircle(radius);
+
+// Display the area of the circle
+console.log("The area of the circle is " + area);
+
+// Define the areaCircle function
+function areaCircle(r) {
+  // Calculate the area of the circle
+  var area = Math.PI * r * r;
+
+  // Return the calculated area
+  return area;
+}
+
+    </script>
+</body>
+</html>

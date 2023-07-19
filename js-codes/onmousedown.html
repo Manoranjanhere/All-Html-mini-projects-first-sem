@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My HTML page</title>
+  </head>
+  <body>
+    <h1>Welcome to my page</h1>
+    <input type="text" id="myTextbox" onchange="textboxChanged()">
+    <script>
+      function textboxChanged() {
+        alert("The textbox value has changed!");
+      }
+
+      // Get the heading element
+      var heading = document.querySelector("h1");
+
+      // Add an onmousedown event listener to the heading
+      heading.onmousedown = function() {
+        alert("You pressed down on the heading!");
+      }
+    </script>
+  </body>
+</html>

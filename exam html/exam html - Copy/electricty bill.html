@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="printElectricityBill()">Print Electricity Bill</button>
+
+    <script>
+        function printElectricityBill() {
+  // get user input
+  var name = prompt("Enter your name: ");
+  var month = prompt("Enter the month: ");
+  var year = prompt("Enter the year: ");
+  var units = prompt("Enter the number of units consumed: ");
+  var costPerUnit = prompt("Enter the cost per unit: ");
+
+  // calculate the electricity bill
+  var bill = units * costPerUnit;
+
+  // print the bill
+  console.log("Electricity Bill for " + name + " (" + month + "-" + year + "): " + bill);
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+#div1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+#div2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+</style>
+</head>
+<body>
+
+<div id="div1" onmouseover="mouseOver()" onmouseout="mouseOut()">
+</div>
+<br>
+<div id="div2" onmouseover="mouseOver()" onmouseout="mouseOut()">
+</div>
+
+<p id="message"></p>
+
+<script>
+function mouseOver() {
+  document.getElementById("message").innerHTML = "Mouse moved to a different division";
+}
+
+function mouseOut() {
+  document.getElementById("message").innerHTML = "Mouse moved back to the original division";
+}
+</script>
+
+</body>
+</html>

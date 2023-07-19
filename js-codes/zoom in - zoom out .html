@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+function zoomIn() {
+  var img = document.getElementById("image");
+  img.style.width = "300px";
+  img.style.height = "300px";
+}
+
+function zoomOut() {
+  var img = document.getElementById("image");
+  img.style.width = "200px";
+  img.style.height = "200px";
+}
+</script>
+</head>
+<body>
+
+<img src="images/admission  block.webp" id="image" onmouseover="zoomIn()" onmouseout="zoomOut()">
+
+</body>
+</html>

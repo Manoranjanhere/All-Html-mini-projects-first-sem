@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Information</title>
+    <style>
+        form {
+            border: 1px solid black;
+            width: 30%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 5px;
+            padding: 3px;
+            margin-bottom: 9px;
+        }
+
+        td {
+            width: 210px;
+        }
+
+        p {
+            margin: 5px;
+            margin-top: 10px;
+        }
+
+        hr {
+            margin: 20px 4px 20px 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <p>Visitor Information</p>
+        <hr>
+        <table>
+            <tr>
+                <td>Email address</td>
+                <td>
+                    <input type="email" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>Do you use the web for</td>
+                <td>
+                    <input type="checkbox" name="" id="">Research <input type="checkbox" name="" id="">Purchases
+                </td>
+            </tr>
+            <tr>
+                <td>Occupation</td>
+                <td>
+                    <select name="" id="">
+                        <option value="Select">(select one)</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="Police Man">Police Man</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Want us to send you junk email?</td>
+                <td>
+                    <input type="radio" name="radio" id="">Absolutely <input type="radio" name="radio" id="">No way,
+                    man
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

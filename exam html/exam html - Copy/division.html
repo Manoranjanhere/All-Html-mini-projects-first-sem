@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html>
+  <head>
+    <style>
+      #div1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+
+      #div2 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+    <script>
+      // get references to the divisions
+      const div1 = document.getElementById('div1');
+      const div2 = document.getElementById('div2');
+
+      // initialize the currentDiv variable to div1
+      let currentDiv = div1;
+
+      // add event listeners to the divisions
+      div1.addEventListener('mouseover', () => {
+        if (currentDiv === div2) {
+          // if the mouse is moving from div2 to div1, display the message
+          alert('Mouse moved from div2 to div1');
+        }
+        // update the currentDiv variable
+        currentDiv = div1;
+      });
+
+      div2.addEventListener('mouseover', () => {
+        if (currentDiv === div1) {
+          // if the mouse is moving from div1 to div2, display the message
+          alert('Mouse moved from div1 to div2');
+        }
+        // update the currentDiv variable
+        currentDiv = div2;
+      });
+    </script>
+  </body>
+</html>
+
+</body>
+</html>

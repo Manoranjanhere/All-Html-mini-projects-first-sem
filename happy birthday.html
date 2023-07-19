@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Happy Birthday</title>
+  </head>
+  <body>
+    <script>
+      // Prompt the user for their age
+      const age = prompt("Enter your age: ");
+
+      // Convert the age to a number
+      const ageAsNumber = parseInt(age, 10);
+
+      // Loop through the number of times equal to the age
+      for (let i = 1; i <= ageAsNumber; i++) {
+        // Write "Happy Birthday to you" to the screen, along with the iteration number
+        document.write(`${i}: Happy Birthday to you<br>`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .textbox {
+      width: 200px;
+      height: 25px;
+      border: 1px solid black;
+    }
+    .button {
+      width: 75px;
+      height: 30px;
+      border: 1px solid black;
+      background-color: lightblue;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <label>Age:</label>
+    <input type="text" id="age" class="textbox">
+  </div>
+  <div>
+    <label>Status:</label>
+    <input type="text" id="status" class="textbox" readonly>
+  </div>
+  <div>
+    <button id="button" class="button">Check</button>
+  </div>
+  <script>
+    const button = document.getElementById('button');
+    button.addEventListener('click', () => {
+      const age = document.getElementById('age').value;
+      const statusInput = document.getElementById('status');
+      if (age < 18) {
+        statusInput.value = 'Child';
+      } else if (age < 60) {
+        statusInput.value = 'Young';
+      } else {
+        statusInput.value = 'Old';
+      }
+    });
+  </script>
+</body>
+</html>
